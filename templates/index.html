@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+<h1>Hello this is index page1</h1>
+<form action="analyze/" method="post">{% csrf_token %}
+    <textarea name="text" style="margin:0px;width:721px;height:93px;"></textarea><br>
+
+    <input type="checkbox" name="removepunc">Remove Punctuations<br>
+    <input type="checkbox" name="fullcaps">Uppercase<br>
+    <input type="checkbox" name="newlineremover">Remove Line<br>
+    <input type="checkbox" name="extraspaceremover">Space remove<br>
+    <button type="submit">Analyze text</button>
+
+
+</form>
+
+</body>
+</html>
